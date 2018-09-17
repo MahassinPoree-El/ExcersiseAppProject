@@ -1,5 +1,5 @@
 # ExcersiseAppProject
-This is the repository for the exersise app I'm going to make in my web programming class
+This is the repository for the exercise app I'm going to make in my web programming class
 
 Features
 ============
