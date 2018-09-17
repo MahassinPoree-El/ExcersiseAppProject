@@ -8,6 +8,7 @@ Features
 
 
 Screen 1
+------------
 	Create Profile
 		Space to type in Name
 		Space to type in Password
