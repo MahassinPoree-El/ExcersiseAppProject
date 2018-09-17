@@ -35,7 +35,8 @@ Screen 3 - Profile
 	----------------
 		Name
 		Email
-###3	Total Activities done
+		Total Activities done
+		------------------------
 			Push-ups
 			Lunges
 			Total miles
@@ -45,7 +46,8 @@ Screen 4 - Tracker
 ====================
 	Screen shows:
 	-------------------
-###3	Activities done today
+		Activities done today
+		------------------------
 			Push-ups
 			Lunges
 			Total miles
