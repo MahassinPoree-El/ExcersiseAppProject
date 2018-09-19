@@ -1,4 +1,4 @@
-# ExcersiseAppProject
+# ExersiseAppProject
 This is the repository for the exercise app I'm going to make in my web programming class
 
 Features
