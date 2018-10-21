@@ -29,8 +29,9 @@ class Tracker
 }
 
 class User{
-    constructor(name, id)
+    constructor(name, id, email)
     {
+        this.email = email,
         this.id = id,
         this.name = name,
         this.canSee = [String(name)],
