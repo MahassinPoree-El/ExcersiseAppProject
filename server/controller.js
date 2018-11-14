@@ -65,3 +65,5 @@ app.post('/users/MakeNewAccount', (req, res) => { //THIS IS HOW YOU ADD NEW USER
     trackSesh.users.push(user);
     res.send(user); //THIS IS A CONF. MESSAGE THAT IS SENT TO YOU SCREEN
 })
+
+module.exports = app;
