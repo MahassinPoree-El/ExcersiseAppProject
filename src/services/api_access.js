@@ -1,21 +1,21 @@
 const api_root = process.env.VUE_APP_API_ROOT;
 export let userId = null;
 
-export function GetState(){
+export function GetState()
+{
     return myFetch(api_root + "/");
 }
 
-export function Login(name, fbid, access_token){
+export function Login(name, fbid, access_token)
+{
     return myFetch(api_root + `/users`, { name, fbid, access_token })
             .then(x=> userId = x.id);
 }
 
-//submit exercise
-//get excercise
 
-export function GetMyExercises()
+export function GetMyStats()
 {
-    return myFetch(api_root + `/exercises/${userId}`);
+    return myFetch(api_root + `/stats/${userId}`);
 }
 
 export function AddExercises(ex)
@@ -23,9 +23,13 @@ export function AddExercises(ex)
     return myFetch(api_root + "/myExercises", {text: ex})
 }
 
-export function PostExercises(ex)
+export function AddCalories(cal)
 {
-    return myFetch(api_root + "/myExercises/post", {text: ex.text})
+    return myFetch(api_root + "/myCalories", {text: cal})
+}
+export function ShareStats(ex)
+{
+    return myFetch(api_root + "/myStats/share", {text: ex.text})
 }
 
   function myFetch(url = ``, data = null) {
