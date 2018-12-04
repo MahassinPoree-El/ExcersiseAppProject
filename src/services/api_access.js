@@ -18,8 +18,9 @@ export function GetMyStats()
     return myFetch(api_root + `/stats/${userId}`);
 }
 
-export function AddExercises(ex)
+export function AddExercises(pushups, lunges, miles)
 {
+    let ex = "Pushups: "+pushups+"\nLunges: "+lunges+"\nMiles: "+miles;
     return myFetch(api_root + "/myExercises", {text: ex})
 }
 
