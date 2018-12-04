@@ -8,7 +8,10 @@
                 <router-link class="nav-link" exact-active-class="active" to="/about">About</router-link>
             </li>
             <li class="nav-item">
-                <router-link class="nav-link" exact-active-class="active" to="/play">Play</router-link>
+                <router-link class="nav-link" exact-active-class="active" to="/profile">Profile</router-link>
+            </li>
+            <li class="nav-item">
+                <router-link class="nav-link" exact-active-class="active" to="/share">Share</router-link>
             </li>
         </ul>
     </nav>
