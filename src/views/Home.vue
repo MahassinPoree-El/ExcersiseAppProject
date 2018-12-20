@@ -10,6 +10,7 @@
     </div>
   </div>
 </template>
+
 <style lang="scss">
 body {
   font-family: 'Open Sans', sans-serif;
@@ -33,20 +34,19 @@ Vue.component('v-select', VueSelect.VueSelect);
 
 export default {
 
-    login()
-    {
-      fb.FBLogin();
-    },
-    userId: ()=> api.userId,
-
-
-  search(){
     el: "#app",
     data: {
       selected: [],
-      options: ""
+      options: []
     },
     methods: {
+          login()
+      {
+      fb.FBLogin();
+     },
+
+      userId: ()=> api.userId,
+
       selectAll() {
         const select = this.$refs.select;
         select.options.forEach(option => {
